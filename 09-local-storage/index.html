@@ -35,11 +35,19 @@
                 alert("No data in local storage");
             }
         }
+        // function to delete from local storage
+        function deleteFromLocalStorage(){
+            localStorage.removeItem("userData")
+            alert("data deleted from local storage")
+             document.getElementById("dataInput").value = ""
+
+        }
     </script>
    <div>
     <input type="text" id="dataInput" placeholder="Enter data">
     <button onclick="saveToLocalStorage()">Save To Local Storage</button>
     <button onclick="loadFromLocalStorage()">Load From Local Storage</button>
+    <button onclick="deleteFromLocalStorage()">deleteFromLocalStorage</button>
    </div> 
 </body>
 </html>
