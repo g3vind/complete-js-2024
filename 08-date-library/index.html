@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            gap: 20px;
+        }
+        #title{
+            text-align: center;
+            font-weight: bolder;
+            color: white;
+        }
+        .hour,.minute,.second{
+            border: 2px solid red;
+            height: 50px;
+            width: 50px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div><h1 id="title">Digital Clock</h1></div>
+    <div>
+        <button class="hour"></button>
+        <button class="minute"></button>
+        <button class="second"></button>
+    </div>
+    <script src="DateAndTime.js"></script>
+</body>
+</html>
