@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- JS -->
+    <script>
+        // function to save data into local storage
+        function saveToLocalStorage(){
+            // get input value
+            let inputValue = document.getElementById("dataInput").value;
+
+            // check if the input is empty
+            if(inputValue.trim() !== ""){
+                // save data to local storage
+                localStorage.setItem("userData", inputValue);
+                alert("Saved to local storage");
+            } else {
+                alert("Please enter some data!");
+            }
+        }
+
+        // function to load data from local storage
+        function loadFromLocalStorage(){
+            // get stored data from local storage
+            let storedData = localStorage.getItem("userData");
+
+            // displaying stored data in an alert
+            if(storedData){
+                alert("Data from local storage: " + storedData);
+            } else {
+                alert("No data in local storage");
+            }
+        }
+    </script>
+   <div>
+    <input type="text" id="dataInput" placeholder="Enter data">
+    <button onclick="saveToLocalStorage()">Save To Local Storage</button>
+    <button onclick="loadFromLocalStorage()">Load From Local Storage</button>
+   </div> 
+</body>
+</html>
