@@ -1,11 +1,12 @@
 let num = 22
-console.log(typeof (num))
+console.log(typeof num)
+console.log(typeof num)
 
 num = "Hi"
-console.log(typeof (num))
+console.log(typeof num)
 
 num = true
-console.log(typeof (num))
+console.log(typeof num)
 
 // var
 var score = 22
@@ -13,8 +14,8 @@ var score = 24
 console.log(score)
 
 // let
-let num2;
-num2 = 22;
+let num2
+num2 = 22
 console.log(num2)
 
 // const
@@ -23,17 +24,14 @@ const name = "govind"
 // name = "abhi"
 // console.log(name)  -------- cant reassign to const
 
-
 // null
 let marks = null
 marks = 99
 console.log(marks)
 
-
 // undefined
-let scores;
-console.log(scores)  // ------ undefined
-
+let scores
+console.log(scores) // ------ undefined
 
 //-----------DATATYPES----------------
 // 1. number
@@ -44,13 +42,11 @@ console.log(scores)  // ------ undefined
 // 6. objects
 // 7. symbol
 
-
-
 // ---------STRINGS--------------
 const str = "this is a string"
 
-console.log(str.charAt(0))  // t
-console.log(str.charCodeAt(0))  // 116
+console.log(str.charAt(0)) // t
+console.log(str.charCodeAt(0)) // 116
 console.log(str.includes(str)) // true
 
 //  STRING CONCATENATION
@@ -68,7 +64,6 @@ console.log(fullName)
 fullName = fName.concat(lName)
 console.log(fullName)
 
-
 // GETTING STRING CHARACTERS
 const strr = "dsnbvdvdjv"
 console.log(str.charAt(2))
@@ -76,8 +71,7 @@ console.log(str.charAt(2))
 // STRING METHODS
 console.log(strr.toUpperCase())
 
-console.log(strr.indexOf("v"))  // returns first occurence
-
+console.log(strr.indexOf("v")) // returns first occurence
 
 // COMMON STRING METHODS
 const hobbies = "        coding reading walking     "
@@ -99,20 +93,18 @@ console.log(favColors)
 const colors = favColors.split(" ")
 console.log(colors)
 
-// IMMUTABLE STRINGS    
+// IMMUTABLE STRINGS
 let str3 = "Hello"
-str3[0] = "a"   // won't work
+str3[0] = "a" // won't work
 console.log(str3)
-
 
 // NUMBERS
 const num3 = 22
 
-console.log(typeof (num3)) // number
+console.log(typeof num3) // number
 
 const res = num3.toString()
-console.log(typeof (res))  // string
-
+console.log(typeof res) // string
 
 // LOOSE (==) VS STRICT EQUALITY (===)
 let eq1 = "22"
@@ -123,7 +115,7 @@ console.log(eq1 === eq2) // false
 // NOT EQUAL - LOOSE (!=)  --- STRICT (!==)
 let ne = 22
 let ne2 = "22"
-console.log(ne != ne2)  // false
+console.log(ne != ne2) // false
 console.log(ne !== ne2) // true
 
 // TYPE CONVERSION
@@ -145,8 +137,6 @@ console.log(booleanOfAge, typeof booleanOfAge)
 
 let newAge = 0
 console.log(Boolean(newAge), typeof Boolean(newAge))
-
-
 
 // --------------ARRAYS------------------
 const names = ["A", "B", "C"]
@@ -176,7 +166,6 @@ newArr.pop()
 console.log(newArr)
 
 // ---- PUSH AND POP MUTATES THE ORIGINAL ARRAY
-
 
 // BOOLEAN VALUES AND COMPARISON OPERATORS
 
